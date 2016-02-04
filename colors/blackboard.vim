@@ -19,15 +19,20 @@ let g:colors_name = "blackboard"
 " #FF5600 bright orange
 " #FFDE00 yolk yellow
 " #D8FA3C lemon yellow
-" #61CE3C green
-" #84A7C1 light blue
+" #61CE3C bright green
+" #0B3222 dark green
+" #370B22 dark gred
 " #AEAEAE medium grey
+" #0B1022 really dark blue
+" #191E2F dark blue
+" #172247 medium blue
+" #84A7C1 light blue
 if has("gui_running")
   "GUI Colors
   highlight Normal guifg=White   guibg=#0B1022
   highlight Cursor guifg=Black   guibg=Yellow
   highlight CursorLine guibg=#191E2F
-  highlight LineNr guibg=#13182A guifg=#888888
+  highlight LineNr guibg=#191E2F guifg=#888888
   "highlight LineNr guibg=#323232 guifg=#888888
   highlight Folded guifg=#1d2652 guibg=#070a15
   highlight Pmenu guibg=#84A7C1
@@ -101,4 +106,9 @@ if has("gui_running")
   highlight gitcommitBranch guifg=#FFDE00
   highlight gitcommitHeader guifg=#84A7C1
 
+  "Diff colors
+  highlight DiffAdd guibg=#0B3222
+  highlight DiffChange guibg=#172247
+  highlight DiffDelete guifg=Red guibg=#370B22
+  highlight DiffText guibg=#172247
 end
