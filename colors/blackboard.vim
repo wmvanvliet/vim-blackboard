@@ -118,6 +118,7 @@ elseif &t_Co == 256
   highlight Cursor ctermfg=black   ctermbg=11
   highlight CursorLine ctermbg=234 cterm=NONE
   highlight LineNr ctermbg=234 ctermfg=240
+  highlight Visual ctermbg=236
 
   "General Colors
   highlight Comment ctermfg=243
