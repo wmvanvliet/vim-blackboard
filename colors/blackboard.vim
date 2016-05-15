@@ -111,4 +111,24 @@ if has("gui_running")
   highlight DiffChange guibg=#172247
   highlight DiffDelete guifg=Red guibg=#370B22
   highlight DiffText guibg=#172247
-end
+
+elseif &t_Co == 256
+
+  highlight Normal ctermfg=white   ctermbg=0
+  highlight Cursor ctermfg=black   ctermbg=11
+  highlight CursorLine ctermbg=234 cterm=NONE
+  highlight LineNr ctermbg=234 ctermfg=240
+
+  "General Colors
+  highlight Comment ctermfg=243
+  highlight Constant ctermfg=227
+  highlight Keyword ctermfg=220
+  highlight String ctermfg=34
+  highlight Type ctermfg=39
+  highlight Identifier ctermfg=39 cterm=NONE
+  highlight Function ctermfg=166 cterm=NONE
+  highlight clear Search
+  highlight Search ctermbg=26
+  highlight PreProc ctermfg=166
+endif
+
