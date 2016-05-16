@@ -49,6 +49,7 @@ if has("gui_running")
   highlight clear Search
   highlight Search guibg=#1C3B79
   highlight PreProc guifg=#FF5600
+  highlight Test guifg=#61CE3C
 
   " StatusLine
   highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=italic
@@ -121,15 +122,21 @@ elseif &t_Co == 256
   highlight Visual ctermbg=236
 
   "General Colors
-  highlight Comment ctermfg=243
-  highlight Constant ctermfg=227
+  highlight Comment ctermfg=145
+  highlight Constant ctermfg=191
   highlight Keyword ctermfg=220
-  highlight String ctermfg=34
+  highlight String ctermfg=77
   highlight Type ctermfg=39
-  highlight Identifier ctermfg=39 cterm=NONE
-  highlight Function ctermfg=166 cterm=NONE
+  highlight Identifier ctermfg=109 cterm=NONE
+  highlight Function ctermfg=202 cterm=NONE
   highlight clear Search
-  highlight Search ctermbg=26
-  highlight PreProc ctermfg=166
+  highlight Search ctermbg=24
+  highlight PreProc ctermfg=202
+
+  "Diff colors
+  highlight DiffAdd ctermbg=22
+  highlight DiffChange ctermbg=17
+  highlight DiffDelete ctermfg=Red ctermbg=52
+  highlight DiffText ctermbg=17
 endif
 
