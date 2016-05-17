@@ -115,7 +115,7 @@ if has("gui_running")
 
 elseif &t_Co == 256
 
-  highlight Normal ctermfg=white   ctermbg=0
+  highlight Normal ctermfg=white   ctermbg=16
   highlight Cursor ctermfg=black   ctermbg=11
   highlight CursorLine ctermbg=234 cterm=NONE
   highlight LineNr ctermbg=234 ctermfg=240
