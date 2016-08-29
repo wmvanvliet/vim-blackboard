@@ -9,7 +9,7 @@
 set background=dark
 hi clear
 if exists("syntax_on")
-   syntax reset
+	syntax reset
 endif
 
 let g:colors_name = "blackboard"
@@ -119,6 +119,10 @@ if has("gui_running")
   "Python colors
   highlight link pythonBuiltinFunc Type
 
+  "Indent guides
+  highlight IndentGuidesOdd guibg=#191E2F
+  highlight IndentGuidesEven guibg=#172247
+
 elseif &t_Co == 256
 
   highlight Normal ctermfg=white   ctermbg=16
@@ -144,5 +148,9 @@ elseif &t_Co == 256
   highlight DiffChange ctermbg=17
   highlight DiffDelete ctermfg=Red ctermbg=52
   highlight DiffText ctermbg=17
+
+  "Indent guides
+  highlight IndentGuidesOdd ctermbg=234
+  highlight IndentGuidesEven ctermbg=235
 endif
 
