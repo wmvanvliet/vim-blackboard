@@ -16,48 +16,51 @@ let g:colors_name = "blackboard"
 
 " Colours in use
 " --------------
-" #FF5600 bright orange
+" #f26512 bright orange
 " #FFDE00 yolk yellow
-" #D8FA3C lemon yellow
-" #61CE3C bright green
+" #BBF34E lemon yellow
+" #62d04e bright green
 " #0B3222 dark green
 " #370B22 dark gred
 " #AEAEAE medium grey
-" #0B1022 really dark blue
-" #191E2F dark blue
+" #0d152c really dark blue
+" #181f35 dark blue
 " #172247 medium blue
 " #84A7C1 light blue
 if has("gui_running")
   "GUI Colors
-  highlight Normal guifg=White   guibg=#0B1022
+  highlight Normal guifg=White   guibg=#0d152c
   highlight Cursor guifg=Black   guibg=Yellow
-  highlight CursorLine guibg=#191E2F
-  highlight LineNr guibg=#191E2F guifg=#888888
+  highlight CursorLine guibg=#181f35
+  highlight LineNr guibg=#181f35 guifg=#888888
   "highlight LineNr guibg=#323232 guifg=#888888
   highlight Folded guifg=#1d2652 guibg=#070a15
   highlight Pmenu guibg=#84A7C1
-  highlight Visual guibg=#283A76
+  highlight Visual guibg=#36528a
 
   "General Colors
-  highlight Comment guifg=#AEAEAE
-  highlight Constant guifg=#D8FA3C
-  highlight Keyword guifg=#FFDE00
-  highlight String guifg=#61CE3C
-  highlight Type guifg=#84A7C1
-  highlight Identifier guifg=#61CE3C gui=NONE
-  highlight Function guifg=#FF5600 gui=NONE
+  highlight Comment guifg=#AEAEAE gui=NONE
+  highlight Constant guifg=#BBF34E gui=NONE
+  highlight Keyword guifg=#F8D734 gui=NONE
+  highlight String guifg=#62d04e gui=NONE
+  highlight Type guifg=#84A7C1 gui=NONE
+  highlight Identifier guifg=#62d04e gui=NONE
+  highlight Function guifg=#f26512 gui=NONE
   highlight clear Search
-  highlight Search guibg=#1C3B79
-  highlight PreProc guifg=#FF5600
-  highlight Test guifg=#61CE3C
+  highlight Search guibg=#1C3B79 gui=NONE
+  highlight PreProc guifg=#f26512 gui=NONE
+  highlight Test guifg=#62d04e gui=NONE
+  highlight Include guifg=#FFDE00 gui=NONE
+  highlight Statement guifg=#FFDE00 gui=NONE
+  highlight Structure guifg=#BBF34E gui=NONE
 
   " StatusLine
   highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=italic
   highlight StatusLineNC  guifg=#000000 guibg=#ffffff gui=NONE
 
   "Invisible character colors
-  highlight NonText guifg=#4a4a59
-  highlight SpecialKey guifg=#4a4a59
+  highlight NonText guifg=#4a4a59 gui=NONE
+  highlight SpecialKey guifg=#4a4a59 gui=NONE
 
   "HTML Colors
   highlight link htmlTag Type
@@ -87,24 +90,24 @@ if has("gui_running")
   highlight link sassMixing Constant
 
   "Outliner colors
-  highlight OL1 guifg=#FF5600
-  highlight OL2 guifg=#61CE3C
+  highlight OL1 guifg=#f26512
+  highlight OL2 guifg=#62d04e
   highlight OL3 guifg=#84A7C1
-  highlight OL4 guifg=#D8FA3C
+  highlight OL4 guifg=#BBF34E
   highlight BT1 guifg=#AEAEAE
   highlight link BT2 BT1
   highlight link BT3 BT1
   highlight link BT4 BT1
 
   "Markdown colors
-  highlight markdownCode guifg=#61CE3C guibg=#070a15
+  highlight markdownCode guifg=#62d04e guibg=#070a15
   highlight link markdownCodeBlock markdownCode
 
   "Git colors
-  highlight gitcommitSelectedFile guifg=#61CE3C
+  highlight gitcommitSelectedFile guifg=#62d04e
   highlight gitcommitDiscardedFile guifg=#C23621
   highlight gitcommitWarning guifg=#C23621
-  highlight gitcommitBranch guifg=#FFDE00
+  highlight gitcommitBranch guifg=#F8D734
   highlight gitcommitHeader guifg=#84A7C1
 
   "Diff colors
@@ -112,6 +115,9 @@ if has("gui_running")
   highlight DiffChange guibg=#172247
   highlight DiffDelete guifg=Red guibg=#370B22
   highlight DiffText guibg=#172247
+
+  "Python colors
+  highlight link pythonBuiltinFunc Type
 
 elseif &t_Co == 256
 
