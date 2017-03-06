@@ -54,6 +54,10 @@ if has("gui_running")
   highlight Statement guifg=#FFDE00 gui=NONE
   highlight Structure guifg=#BBF34E gui=NONE
 
+  " Text document structure
+  highlight Title guifg=#f26512 gui=NONE
+  highlight Heading guifg=#ffde00 gui=NONE
+
   " StatusLine
   highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=italic
   highlight StatusLineNC  guifg=#000000 guibg=#ffffff gui=NONE
@@ -66,6 +70,10 @@ if has("gui_running")
   highlight link htmlTag Type
   highlight link htmlEndTag htmlTag
   highlight link htmlTagName htmlTag
+  highlight link htmlTitle Title
+  highlight link htmlH1 Heading
+  highlight link htmlH2 Heading
+  highlight link htmlH3 Heading
 
   "XML Colors
   highlight link xmlTag Type
@@ -102,9 +110,9 @@ if has("gui_running")
   "Markdown colors
   highlight markdownCode guifg=#62d04e guibg=#070a15
   highlight link markdownCodeBlock markdownCode
-  highlight markdownH1 guifg=#f26512
-  highlight markdownH2 guifg=#f26512
-  highlight markdownH3 guifg=#f26512
+  highlight link markdownH1 Heading
+  highlight link markdownH2 Heading
+  highlight link markdownH3 Heading
 
   "Git colors
   highlight gitcommitSelectedFile guifg=#62d04e
@@ -121,6 +129,10 @@ if has("gui_running")
 
   "Python colors
   highlight link pythonBuiltinFunc Type
+
+  "Javascript colors
+  highlight link jsFunction Keyword
+  highlight link jsGlobalObjects Type
 
   "Indent guides
   highlight IndentGuidesOdd guibg=#191E2F
