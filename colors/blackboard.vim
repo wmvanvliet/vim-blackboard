@@ -17,12 +17,12 @@ let g:colors_name = "blackboard"
 " Colours in use
 " --------------
 " #f26512 bright orange
-" #FFDE00 yolk yellow
-" #BBF34E lemon yellow
+" #f8d734 yolk yellow
+" #bbf34e lemon yellow
 " #62d04e bright green
-" #0B3222 dark green
-" #370B22 dark gred
-" #AEAEAE medium grey
+" #0b3222 dark green
+" #370b22 dark gred
+" #aeaeae medium grey
 " #0d152c really dark blue
 " #181f35 dark blue
 " #172247 medium blue
