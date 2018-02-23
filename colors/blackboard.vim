@@ -44,7 +44,7 @@ if has("gui_running")
   highlight Keyword guifg=#F8D734 gui=NONE
   highlight String guifg=#62d04e gui=NONE
   highlight Type guifg=#84A7C1 gui=NONE
-  highlight Identifier guifg=#62d04e gui=NONE
+  highlight Identifier guifg=#84A7C1 gui=NONE
   highlight Function guifg=#f26512 gui=NONE
   highlight clear Search
   highlight Search guibg=#1C3B79 gui=NONE
@@ -129,6 +129,7 @@ if has("gui_running")
 
   "Python colors
   highlight link pythonBuiltinFunc Type
+  highlight link pythonSelf Type
 
   "Javascript colors
   highlight link jsFunction Keyword
