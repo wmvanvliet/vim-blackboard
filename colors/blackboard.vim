@@ -21,19 +21,18 @@ let g:colors_name = "blackboard"
 " #bbf34e lemon yellow
 " #62d04e bright green
 " #0b3222 dark green
-" #370b22 dark gred
+" #370b22 dark red
 " #aeaeae medium grey
 " #0d152c really dark blue
 " #181f35 dark blue
 " #172247 medium blue
 " #84A7C1 light blue
-if has("gui_running")
-  "GUI Colors
+if has("gui_running") || &termguicolors
+  "True colors
   highlight Normal guifg=White   guibg=#0d152c
   highlight Cursor guifg=Black   guibg=Yellow
-  highlight CursorLine guibg=#181f35
+  highlight CursorLine guibg=#181f35 cterm=NONE
   highlight LineNr guibg=#181f35 guifg=#888888
-  "highlight LineNr guibg=#323232 guifg=#888888
   highlight Folded guifg=#1d2652 guibg=#070a15
   highlight Pmenu guibg=#84A7C1
   highlight Visual guibg=#36528a
@@ -140,6 +139,7 @@ if has("gui_running")
   highlight IndentGuidesEven guibg=#172247
 
 elseif &t_Co == 256
+  " 256 colors
 
   highlight Normal ctermfg=white   ctermbg=16
   highlight Cursor ctermfg=black   ctermbg=11
@@ -169,4 +169,3 @@ elseif &t_Co == 256
   highlight IndentGuidesOdd ctermbg=234
   highlight IndentGuidesEven ctermbg=235
 endif
-
