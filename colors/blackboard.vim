@@ -59,7 +59,7 @@ if has("gui_running") || &termguicolors
   highlight Heading guifg=#ffde00 gui=NONE
 
   " StatusLine
-  highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=italic
+  highlight StatusLine  guifg=#000000 guibg=#ffffaf gui=NONE
   highlight StatusLineNC  guifg=#000000 guibg=#ffffff gui=NONE
 
   "Invisible character colors
@@ -141,7 +141,6 @@ if has("gui_running") || &termguicolors
 
 elseif &t_Co == 256
   " 256 colors
-
   highlight Normal ctermfg=white   ctermbg=16
   highlight Cursor ctermfg=black   ctermbg=11
   highlight CursorLine ctermbg=234 cterm=NONE
