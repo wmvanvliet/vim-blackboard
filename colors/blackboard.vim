@@ -36,6 +36,7 @@ if has("gui_running") || &termguicolors
   highlight Folded guifg=#1d2652 guibg=#070a15
   highlight Pmenu guibg=#84A7C1
   highlight Visual guibg=#36528a
+  highlight SignColumn guibg=#0d152c
 
   "General Colors
   highlight Comment guifg=#AEAEAE gui=NONE
@@ -146,6 +147,7 @@ elseif &t_Co == 256
   highlight CursorLine ctermbg=234 cterm=NONE
   highlight LineNr ctermbg=234 ctermfg=240
   highlight Visual ctermbg=236
+  highlight SignColumn ctermbg=16
 
   "General Colors
   highlight Comment ctermfg=145
